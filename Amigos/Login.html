@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta char="utf-6" />
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel=" stylesheet" />
+    <link href="Front.css" rel=" stylesheet" />
+    <style>
+        body {
+            background-image: url(images/amigos.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: auto;
+            background-color: azure;
+        }
+
+        .container-fluid {
+            background-position: left;
+        }
+
+
+        form {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        input {
+            font-size: medium;
+        }
+    </style>
+    <script type='text/javascript'>
+        function formValidator() {
+            var email = document.getElementById('email');
+            var Password = document.getElementById('Password');
+            if (emailValidator(email, "plz enter valid email")) {
+                if (isAlphanumeric(Password, "Please enter alphanumeric password")) {
+                    return true;
+                }
+            }
+        }
+
+        function emailValidator(elem, helperMsg) {
+            var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-] + \.[a-zA-Z0-9]{2,4}+$/;
+            if (elem.value.match(emailExp)) {
+                return true;
+            } else {
+                alert(helperMsg);
+                elem.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class=" container-fluid">
+        <h2 style="background-position:left">Login</h2>
+        <form action="# " onsubmit='return formValidator()'>
+            Email:<br /> <input type='text' id='email' /><br /><br />
+            Password:<br />
+            <input type='text' id='password' /><br /><br />
+            <input type='submit' value='Login' />
+        </form>
+    </div>
+</body>
+</html>

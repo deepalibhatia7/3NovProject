@@ -1,0 +1,211 @@
+﻿{
+    margin: 0px;
+    padding: 0;
+}
+
+
+.top-nav-bar {
+    height: 100px;
+    padding: 10px;
+    top: 0;
+    position: sticky;
+    background-color: azure;
+    margin-bottom: 20px;
+    border-bottom: 3px solid green;
+    z-index: 2;
+}
+
+.logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 60px;
+}
+
+.form-control {
+    position: page;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px solid green;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: none;
+    padding-left: 20px;
+}
+
+.input-group-text {
+    background-color: aquamarine;
+    border: 1px dashed aqua;
+    margin: 8.5px 10px 3px 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+}
+
+.search-box {
+    display: inline-flex;
+    width: 60%;
+    cursor: pointer;
+    height: auto;
+}
+
+.fa-search {
+    color: cadetblue;
+    height: 30px;
+}
+
+.menu-bar {
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+
+    .menu-bar ul {
+        display: inline-flex;
+        float: right;
+    }
+
+        .menu-bar ul li {
+            border-left: 1px solid white;
+            list-style-type: none;
+            padding: 15px 30px;
+            text-align: center;
+            background-color: cadetblue;
+            cursor: pointer;
+        }
+
+            .menu-bar ul li a {
+                font-size: 16px;
+                font-weight: bold;
+                color: white;
+            }
+
+.fa-shopping-cart {
+    margin-right: 5px;
+}
+
+.fa-user-plus {
+    margin-right: 5px;
+}
+
+.fa-sign-in {
+    margin-right: 5px;
+}
+
+.side-menu {
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: darkcyan;
+    color: white;
+}
+
+    .side-menu ul {
+        margin-left: 10px;
+    }
+
+        .side-menu ul li {
+            list-style-type: none;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+            .side-menu ul li:hover {
+                color: brown;
+            }
+
+            .side-menu ul li ul {
+                display: none;
+                z-index: 10;
+                top: 100px;
+            }
+
+            .side-menu ul li:hover ul {
+                display: block;
+                height: 400px;
+                margin-left: 14%;
+                padding: 0px 100px 10px 10px;
+                position: fixed;
+                background-color: darkturquoise;
+                box-shadow: 1px 1px 4px 1px rgba(0,0,0,5);
+            }
+
+.fa-angle-right {
+    float: right;
+}
+
+.imagescroll {
+    float: left;
+    height: 100px;
+}
+
+.imagescroll2 {
+    float: right;
+    height: 100px;
+}
+
+
+.category {
+    background-color: azure;
+}
+
+
+
+
+#footer {
+    background-color: #111111;
+    margin: 0;
+    min-height: 122px;
+    padding: 0;
+    width: 100%;
+}
+
+    #footer div {
+        margin: 0 auto;
+        max-width: 940px;
+        overflow: hidden;
+        padding: 47px 10px 42px;
+    }
+
+        #footer div p {
+            color: #FFFFFF;
+            float: left;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 15px;
+            margin: 0;
+            padding: 5px 0 0;
+            text-align: left;
+            text-transform: none;
+            width: 400px;
+        }
+
+        #footer div .connect {
+            display: block;
+            float: right;
+            height: 32px;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            width: 154px;
+        }
+
+            #footer div .connect a {
+                background: url(../images/icons.png) no-repeat;
+                display: block;
+                float: left;
+                height: 28px;
+                margin: 0 7px;
+                padding: 0;
+                text-indent: -99999px;
+                width: 28px;
+            }
+
+ 

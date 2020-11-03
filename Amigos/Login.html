@@ -25,8 +25,19 @@
             margin: 100px auto;
         }
 
-        input {
+        input[type=text],inpute[type=password] {
             font-size: medium;
+            width:100%;
+            padding:12px 20px;
+            margin:8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .cancelbtn{
+            width:auto;
+            padding:10px 18px;
+            background-color:#f44336;
         }
     </style>
     <script type='text/javascript'>
@@ -57,10 +68,13 @@
     <div class=" container-fluid">
         <h2 style="background-position:left">Login</h2>
         <form action="# " onsubmit='return formValidator()'>
-            Email:<br /> <input type='text' id='email' /><br /><br />
+            Email:<br /> <input type='text' placeholder="Enter Email"id='email' /><br /><br />
             Password:<br />
-            <input type='text' id='password' /><br /><br />
+            <input type='text' placeholder="Enter Password" id='password' /><br /><br />
+            
             <input type='submit' value='Login' />
+            <button type="button" class="cancelbtn">Cancel</button>
+
         </form>
     </div>
 </body>

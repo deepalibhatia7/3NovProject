@@ -159,7 +159,7 @@
 
 
 #footer {
-    background-color: #111111;
+    background-color: aquamarine;
     margin: 0;
     min-height: 122px;
     padding: 0;
@@ -174,10 +174,11 @@
     }
 
         #footer div p {
-            color: #FFFFFF;
+            color: white;
+            font-color:White;
             float: left;
             font-family: Arial;
-            font-size: 15px;
+            font-size: 20px;
             font-weight: normal;
             line-height: 15px;
             margin: 0;
